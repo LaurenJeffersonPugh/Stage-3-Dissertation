@@ -1,0 +1,361 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1650390741937098
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4345876371508882}
+  - component: {fileID: 33909867377678710}
+  - component: {fileID: 64886048992421146}
+  - component: {fileID: 23011931515578192}
+  - component: {fileID: 114504395320492692}
+  - component: {fileID: 114809465099777166}
+  m_Layer: 0
+  m_Name: Level Tile
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4345876371508882
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650390741937098}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!33 &33909867377678710
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650390741937098}
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!64 &64886048992421146
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650390741937098}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!23 &23011931515578192
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650390741937098}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: a401df3d9690f194c924b47988046b53, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 1
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &114504395320492692
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650390741937098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d090191ad2f39b4cb9276f04e77a867, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &114809465099777166
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1650390741937098}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb0440a0612300f4cb92dcc22d4167a2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  shader: {fileID: -6465566751694194690, guid: 984e968ce8b46d84ea80cf37b5203d45, type: 3}
+  noiseMapGeneration: {fileID: 114504395320492692}
+  tileRenderer: {fileID: 23011931515578192}
+  meshFilter: {fileID: 33909867377678710}
+  meshCollider: {fileID: 64886048992421146}
+  levelScale: 5
+  heightTerrainTypes:
+  - name: water
+    threshold: 0.4
+    color: {r: 0, g: 0.42051685, b: 0.5566038, a: 1}
+    index: 0
+  - name: grass
+    threshold: 0.7
+    color: {r: 0, g: 0.46226418, b: 0, a: 1}
+    index: 1
+  - name: mountain
+    threshold: 1
+    color: {r: 0.1981132, g: 0.09968175, b: 0.023362402, a: 1}
+    index: 2
+  heatTerrainTypes:
+  - name: hottest
+    threshold: 0.25
+    color: {r: 1, g: 0.29411763, b: 0.29411763, a: 0}
+    index: 0
+  - name: hot
+    threshold: 0.5
+    color: {r: 0.9764706, g: 1, b: 0.5735294, a: 0}
+    index: 1
+  - name: cold
+    threshold: 0.75
+    color: {r: 0.375, g: 0.5603448, b: 1, a: 0}
+    index: 2
+  - name: coldest
+    threshold: 1
+    color: {r: 0.9044118, g: 0.9881339, b: 1, a: 0}
+    index: 3
+  moistureTerrainTypes:
+  - name: dryest
+    threshold: 0.25
+    color: {r: 1, g: 0.29411766, b: 0.29411766, a: 0}
+    index: 0
+  - name: dry
+    threshold: 0.5
+    color: {r: 0.97647065, g: 1, b: 0.57254905, a: 0}
+    index: 1
+  - name: wet
+    threshold: 0.75
+    color: {r: 0.37647063, g: 0.56078434, b: 1, a: 0}
+    index: 2
+  - name: wettest
+    threshold: 1
+    color: {r: 0.13235295, g: 0.13833688, b: 1, a: 0}
+    index: 3
+  heightMultiplier: 10
+  heightCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 0.39835715
+      value: 0.010295257
+      inSlope: 0.088790655
+      outSlope: 0.088790655
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  heatCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  moistureCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: 2
+      outSlope: 2
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 0
+  heightWaves:
+  - seed: 2222
+    frequency: 1
+    amplitude: 1
+  - seed: 6789
+    frequency: 0.5
+    amplitude: 2
+  - seed: 5432
+    frequency: 0.25
+    amplitude: 4
+  heatWaves:
+  - seed: 4545
+    frequency: 1
+    amplitude: 1
+  - seed: 7654
+    frequency: 0.5
+    amplitude: 2
+  - seed: 9812
+    frequency: 0.25
+    amplitude: 4
+  moistureWaves:
+  - seed: 9999
+    frequency: 1
+    amplitude: 1
+  - seed: 8888
+    frequency: 0.5
+    amplitude: 2
+  - seed: 3451
+    frequency: 0.25
+    amplitude: 4
+  biomes:
+  - biomes:
+    - name: dessert
+      color: {r: 1, g: 0.9921569, b: 0.5411765, a: 1}
+      index: 0
+      texture: {fileID: 2800000, guid: ea355a578e2f3c4489fd40ae799a951b, type: 3}
+    - name: shrubland
+      color: {r: 0.61960787, g: 0.7843138, b: 0, a: 1}
+      index: 1
+      texture: {fileID: 2800000, guid: 3797b9b0922d79249831b7888dbcef15, type: 3}
+    - name: tundra
+      color: {r: 1, g: 1, b: 1, a: 1}
+      index: 2
+      texture: {fileID: 2800000, guid: 7a1d7ba9c5e42554ebdf2cd1a7d75072, type: 3}
+    - name: tundra
+      color: {r: 1, g: 1, b: 1, a: 1}
+      index: 3
+      texture: {fileID: 2800000, guid: 7a1d7ba9c5e42554ebdf2cd1a7d75072, type: 3}
+  - biomes:
+    - name: savanna
+      color: {r: 0.36862746, g: 0.18039216, b: 0, a: 1}
+      index: 0
+      texture: {fileID: 2800000, guid: 854d5e1b43b92314a8098e761f3b4203, type: 3}
+    - name: shrubland
+      color: {r: 0.62042916, g: 0.7830189, b: 0, a: 1}
+      index: 1
+      texture: {fileID: 2800000, guid: 3797b9b0922d79249831b7888dbcef15, type: 3}
+    - name: boreal forest
+      color: {r: 0.10196079, g: 0.5372549, b: 0, a: 1}
+      index: 2
+      texture: {fileID: 2800000, guid: 498344809435d884fa849f36d4f92b2c, type: 3}
+    - name: tundra
+      color: {r: 1, g: 1, b: 1, a: 1}
+      index: 3
+      texture: {fileID: 2800000, guid: 7a1d7ba9c5e42554ebdf2cd1a7d75072, type: 3}
+  - biomes:
+    - name: savanna
+      color: {r: 0.36862746, g: 0.18039216, b: 0, a: 1}
+      index: 0
+      texture: {fileID: 2800000, guid: 854d5e1b43b92314a8098e761f3b4203, type: 3}
+    - name: boreal forest
+      color: {r: 0.10196079, g: 0.5411765, b: 0, a: 1}
+      index: 1
+      texture: {fileID: 2800000, guid: 498344809435d884fa849f36d4f92b2c, type: 3}
+    - name: boreal forest
+      color: {r: 0.10196079, g: 0.5411765, b: 0, a: 0}
+      index: 2
+      texture: {fileID: 2800000, guid: 498344809435d884fa849f36d4f92b2c, type: 3}
+    - name: tundra
+      color: {r: 1, g: 1, b: 1, a: 1}
+      index: 3
+      texture: {fileID: 2800000, guid: 7a1d7ba9c5e42554ebdf2cd1a7d75072, type: 3}
+  - biomes:
+    - name: rainforest
+      color: {r: 0.03137255, g: 0.23529413, b: 0, a: 1}
+      index: 0
+      texture: {fileID: 2800000, guid: b26e7078f4317604396dea6c5df6a691, type: 3}
+    - name: rainforest
+      color: {r: 0.03137255, g: 0.23529413, b: 0, a: 0}
+      index: 1
+      texture: {fileID: 2800000, guid: b26e7078f4317604396dea6c5df6a691, type: 3}
+    - name: boreal forest
+      color: {r: 0.10196079, g: 0.5372549, b: 0, a: 1}
+      index: 2
+      texture: {fileID: 2800000, guid: 498344809435d884fa849f36d4f92b2c, type: 3}
+    - name: tundra
+      color: {r: 1, g: 1, b: 1, a: 1}
+      index: 3
+      texture: {fileID: 2800000, guid: 7a1d7ba9c5e42554ebdf2cd1a7d75072, type: 3}
+  waterColor: {r: 0, g: 0.4649687, b: 0.6320754, a: 1}
+  waterTexture: {fileID: 2800000, guid: 1c5aa93e337df9947af2365293e1e9a4, type: 3}
+  visualizationMode: 3
